@@ -1,40 +1,23 @@
 # Prelude
 
-> Role models are important. <br/>
-> -- Officer Alex J. Murphy / RoboCop
+RubyMotion has some particular styling needs that don't translate perfectly from
+either of its parents, Ruby and Objective-C.  Some are immediately obvious, like
+the class between methods_with_underscores in ruby, and methodsWithCapitals in
+Objective-C.  Some are subtler, like do we prefer new/initialize() or alloc/init*?  
+The RubyMotion community so far seems to skew ruby-oriented, so this document is directly 
+forked from ["Ruby's"](https://github.com/bbatsov/ruby-style-guide), and conventions
+will tend to lean in that direction.  
 
-One thing has always bothered me as Ruby developer - Python developers
-have a great programming style reference
-([PEP-8](http://www.python.org/dev/peps/pep-0008/)) and we never got
-an official guide, documenting Ruby coding style and best
-practices. And I do believe that style matters. I also believe that a 
-great hacker community, such as Ruby has, should be quite capable of 
-producing this coveted document.
+# The RubyMotion Style Guide
 
-This guide started its life as our internal company Ruby coding guidelines
-(written by yours truly). At some point I decided that the work I was
-doing might be interesting to members of the Ruby community in general
-and that the world had little need for another internal company
-guideline. But the world could certainly benefit from a
-community-driven and community-sanctioned set of practices, idioms and
-style prescriptions for Ruby programming.
-
-Since the inception of the guide I've received a lot of feedback from
-members of the exceptional Ruby community around the world. Thanks for
-all the suggestions and the support! Together we can make a resource
-beneficial to each and every Ruby developer out there.
-
-By the way, if you're into Rails you might want to check out the
-complementary
-[Ruby on Rails 3 Style Guide](https://github.com/bbatsov/rails-style-guide).
-
-# The Ruby Style Guide
-
-This Ruby style guide recommends best practices so that real-world Ruby
-programmers can write code that can be maintained by other real-world Ruby
+This RubyMotion style guide recommends best practices so that real-world RubyMotion
+programmers can write code that can be maintained by other real-world RubyMotion
 programmers. A style guide that reflects real-world usage gets used, and a
 style guide that holds to an ideal that has been rejected by the people it is
 supposed to help risks not getting used at all &ndash; no matter how good it is.
+
+From here on out, the guide will use "Ruby" and "RubyMotion" interchangeably, unless
+otherwise noted.  
 
 The guide is separated into several sections of related rules. I've
 tried to add the rationale behind the rules (if it's omitted I've
